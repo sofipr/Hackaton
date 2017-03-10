@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.facebookloginsample.ChildrenActivity">
+
+    <Button
+        android:id="@+id/done_add_children_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/add_child_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add child"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="167dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="336dp">
+
+        <EditText
+            android:id="@+id/birth_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <ToggleButton
+            android:id="@+id/gender_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="Girl"
+            android:textOn="Boy" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/childrenListView"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+</LinearLayout>
