@@ -45,9 +45,10 @@ public class LoginActivity extends Activity {
 
         if (PrefUtils.getCurrentUser(LoginActivity.this) != null) {
 
-            Intent homeIntent = new Intent(LoginActivity.this, LogoutActivity.class);
+//            Intent homeIntent = new Intent(LoginActivity.this, LogoutActivity.class);
+            Intent childrenIntent = new Intent(LoginActivity.this, ChildrenActivity.class);
 
-            startActivity(homeIntent);
+            startActivity(childrenIntent);
 
             finish();
         }
